@@ -33,7 +33,7 @@ export class News extends Component {
   };
 
   onrightclick = async () => {
-    if (this.state.page + 1 > Math.ceil(this.state.totalResults / 20)) {
+    if (this.state.page + 1 > Math.ceil(this.state.totalResults / 19)) {
     } else {
       let url = `https://newsapi.org/v2/top-headlines?country=in&apiKey=68b84f0d11d946c6bfe4a61ad72745f5&page=${this.state
         .page + 1}&pageSize=19`;
@@ -71,7 +71,13 @@ export class News extends Component {
           <button disabled={this.state.page <= 1} type="button" className="btn btn-dark" onClick={this.onleftclick}>
             &larr; Previous
           </button>
-          <button rel="noreferrer" type="button" className="btn btn-dark" onClick={this.onrightclick}>
+          <button
+            disabled={this.state.page >= 2}
+            rel="noreferrer"
+            type="button"
+            className="btn btn-dark"
+            onClick={this.onrightclick}
+          >
             Next &rarr;
           </button>
         </div>
