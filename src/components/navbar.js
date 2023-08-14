@@ -4,9 +4,9 @@ export class navbar extends Component {
   render(props) {
     return (
       <div>
-        <nav className="navbar navbar-expand-lg bg-body-tertiary">
-          <div className="container-fluid">
-            <a className="navbar-brand" href="#">
+        <nav className="navbar  navbar-expand-lg  bg-black ">
+          <div className="container-fluid ">
+            <a className="navbar-brand text-white" href="/">
               NewsMonkey
             </a>
             <button
@@ -23,12 +23,12 @@ export class navbar extends Component {
             <div className="collapse navbar-collapse" id="navbarScroll">
               <ul className="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll">
                 <li className="nav-item">
-                  <a className="nav-link active" aria-current="page" href="/">
+                  <a className="nav-link active text-white" aria-current="page" href="/">
                     Home
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="/">
+                  <a className="nav-link text-white" href="/">
                     About
                   </a>
                 </li>
