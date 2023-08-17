@@ -1,11 +1,11 @@
 import React, { Component } from "react";
-import loading from "../SVKl.gif";
+import loading from "../loading-buffering.gif";
 
 export default class spinner extends Component {
   render() {
     return (
       <div className="text-center text-sm">
-        <img src={loading} alt="loading" />
+        <img className="my-4" src={loading} alt="loading" />
       </div>
     );
   }
