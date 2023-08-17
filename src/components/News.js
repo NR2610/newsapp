@@ -88,6 +88,7 @@ export class News extends Component {
                     newsUrl={elements.url}
                     auther={elements.author}
                     date={elements.publishedAt}
+                    source={elements.source.name}
                   />
                 </div>
               );
