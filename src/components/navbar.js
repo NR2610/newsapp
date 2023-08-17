@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
 export class navbar extends Component {
   render(props) {
@@ -6,9 +7,9 @@ export class navbar extends Component {
       <div>
         <nav className="navbar  navbar-expand-lg  bg-black ">
           <div className="container-fluid ">
-            <a className="navbar-brand text-white" href="/">
+            <Link className="navbar-brand text-white" to="/">
               NewsMonkey
-            </a>
+            </Link>
             <button
               className="navbar-toggler"
               type="button"
@@ -23,14 +24,49 @@ export class navbar extends Component {
             <div className="collapse navbar-collapse" id="navbarScroll">
               <ul className="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll">
                 <li className="nav-item">
-                  <a className="nav-link active text-white" aria-current="page" href="/">
+                  <Link className="nav-link active text-white" aria-current="page" to="/">
                     Home
-                  </a>
+                  </Link>
+                </li>
+                {/* <li className="nav-item">
+                  <Link className="nav-link text-white" to="/About">
+                    About
+                  </Link>
+                </li> */}
+                <li className="nav-item">
+                  <Link className="nav-link text-white" to="/Bussiness">
+                    Bussiness
+                  </Link>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link text-white" href="/">
-                    About
-                  </a>
+                  <Link className="nav-link text-white" to="/Entertainment">
+                    Entertainment
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link className="nav-link text-white" to="/General">
+                    General
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link className="nav-link text-white" to="/Health">
+                    Health
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link className="nav-link text-white" to="/Science">
+                    Science
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link className="nav-link text-white" to="/Sports">
+                    Sports
+                  </Link>
+                </li>
+                <li className="nav-item">
+                  <Link className="nav-link text-white" to="/Technology">
+                    Technology
+                  </Link>
                 </li>
               </ul>
               {/* <form className="d-flex" role="search">
