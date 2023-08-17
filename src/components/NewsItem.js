@@ -7,7 +7,7 @@ export class newsitem extends Component {
     return (
       <div className="my-3">
         <div className="card">
-          <span class="badge rounded-pill text-bg-light">{source}</span>
+          <span className="badge rounded-pill text-bg-light">{source}</span>
           <img src={imageUrl ? imageUrl : "https://cdn.ndtv.com/common/images/ogndtv.png"} className="card-img-top" alt="..." />
           <div className="card-body">
             <h5 className="card-title">{title}...</h5>
