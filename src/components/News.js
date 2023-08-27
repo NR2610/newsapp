@@ -45,7 +45,9 @@ const News = props => {
   };
 
   useEffect(() => {
+    document.title = `${fLCapital(props.category)} - NewsMonkey`;
     updatepage();
+    //eslint-disable-next-line
   }, []);
   // async componentDidMount() {
   //   this.updatepage();
